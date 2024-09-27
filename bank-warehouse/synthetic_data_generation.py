@@ -57,9 +57,10 @@ def generate_account_data(num_records, customer_ids):
 def generate_calendar_data(start_date, end_date):
     dates = []
     current_date = start_date
+    
     while current_date <= end_date:
         dates.append({
-            "date": current_date,
+            "date": current_date.date(),
             "year": current_date.year,
             "month": current_date.month,
             "day": current_date.day,
