@@ -1,0 +1,60 @@
+Table location {
+  location_id uuid [pk]
+  country varchar(128) 
+  state varchar(128)
+  city varchar(256)
+}
+
+Table customers {
+  customer_id uuid [pk]
+  location_id uuid
+  first_name varchar(128)
+  last_name varchar(128)
+}
+
+Table accounts {
+  account_id uuid [pk]
+  customer_id uuid
+  created_date date
+  status varchar(128)
+  account_number varchar(128)
+}
+
+
+Table transfers {
+  id uuid [pk]
+  account_id uuid
+  transaction_type varchar(128) // Type of transaction (e.g., deposit, withdrawal)
+  amount float
+  transaction_requested_date date
+  transaction_requested_at timestamp
+  status varchar(128)
+}
+
+
+Table calendar {
+  date date [pk] // Date
+  year int
+  month int
+  day int
+  quarter int
+}
+
+Table insurance {
+  insurance_id uuid [pk]
+  customer_id uuid
+  created_date date
+  policy_number varchar(128)
+  coverage_amount float
+}
+
+Ref: customers.location_id > location.location_id
+Ref: accounts.customer_id > customers.customer_id
+Ref: accounts.created_date > calendar.date
+
+Ref: transfers.account_id > accounts.account_id
+Ref: transfers.transaction_requested_date > calendar.date
+
+Ref: insurance.created_date > calendar.date
+Ref: insurance.customer_id > customers.customer_id
+
