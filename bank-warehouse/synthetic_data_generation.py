@@ -93,13 +93,13 @@ def generate_random_date(start_date, end_date):
     return start_date + timedelta(days=random_days)
 
 # Function to generate transfers while maintaining the account balance condition
-def generate_transfers(accounts_df, num_transactions=1000, start_date='2020-01-01', end_date='2025-01-01'):
+def generate_transfers(accounts_df, num_transactions=1000, start_date=datetime.today() - timedelta(days=5*365), end_date=datetime.today()):
     transfers_df = pd.DataFrame(columns=['transaction_n', 'account_id', 'transaction_type', 
                                    'amount', 'transaction_requested_date', 
                                    'transaction_requested_at', 'status'])
 
-    start_date = datetime.strptime(start_date, '%Y-%m-%d').date()  # Convert to date
-    end_date = datetime.strptime(end_date, '%Y-%m-%d').date()  # Convert to date
+    start_date = start_date.date()  # Convert to date
+    end_date = end_date.date()  # Convert to date
 
     # Initialize the ID counter
     transaction_count = 1
@@ -163,6 +163,7 @@ def generate_transfers(accounts_df, num_transactions=1000, start_date='2020-01-0
 num_customers = 100
 num_accounts = 120
 num_insurances = 100
+num_transactions = 1000
 
 latin_america_country_city_mapping = {
     "Colombia": ["Bogotá", "Medellín", "Cali", "Barranquilla", "Cartagena"],
@@ -172,7 +173,9 @@ latin_america_country_city_mapping = {
     "Ecuador": ["Guayaquil", "Quito", "Cuenca", "Santo Domingo", "Machala"]
 }
 
-
+# Range of dates
+start_date=datetime.today() - timedelta(days=5*365)
+end_date=datetime.today()
 
 # Create locations
 location_data = generate_location_data(latin_america_country_city_mapping)
@@ -187,14 +190,14 @@ account_data = generate_account_data(num_accounts, customer_ids)
 account_ids = account_data['account_id'].tolist()
 
 # Create calendar data for the last 5 years
-calendar_data = generate_calendar_data(start_date=datetime.today() - timedelta(days=5*365), 
-                                        end_date=datetime.today())
+calendar_data = generate_calendar_data(start_date=start_date, end_date=end_date)
+
 
 # Create insurance
 insurance_data = generate_insurance_data(num_insurances, customer_ids)
 
 # Generate the synthetic transfer data
-transfers_data = generate_transfers(accounts_df=account_data, num_transactions=1000)
+transfers_data = generate_transfers(accounts_df=account_data, num_transactions=num_transactions,start_date=start_date,end_date=end_date)
 
 
 # Display the generated data
