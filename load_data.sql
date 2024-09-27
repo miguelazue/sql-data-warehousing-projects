@@ -1,3 +1,6 @@
+-- newbank is the schema created for the exercise
+USE newbank;
+
 SET GLOBAL local_infile = 1;
 
 LOAD DATA LOCAL INFILE 'C:/Users/migue/OneDrive/Documentos/GitHub/sql-data-warehousing-projects/bank-warehouse/data/account_data.csv'
