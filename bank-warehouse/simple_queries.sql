@@ -1,4 +1,7 @@
--- The first accounts that were created, use of LIMIT
+-- newbank is the schema created for the exercise
+USE newbank;
+
+-- The first accounts that were created, use of LIMIT and ORDER BY
 SELECT *
 FROM accounts
 ORDER BY created_date ASC
