@@ -12,7 +12,7 @@ This repository contains SQL scripts and data warehousing projects that demonstr
 
 ## Project NewBank: Bank Data Warehouse
 
-The data for this project was built using synthetic data to mimic real-world banking scenarios, including customer accounts, transactions, insurance policies, and more. The data warehouse schema is designed to store transactional and customer information, providing a clear structure for analytical queries.
+This project simulates real-world banking scenarios using synthetic data, including customer accounts, transactions, and insurance policies. **NewBank** is a hypothetical multinational bank operating in five Latin American countries, offering both banking and insurance services to its customers. The data warehouse schema is designed to efficiently store transactional and customer information, enabling clear and structured queries for analytical use cases.
 
 ### Data Warehouse Schema:
 
