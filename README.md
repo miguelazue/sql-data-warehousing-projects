@@ -22,9 +22,14 @@ The data warehouse schema is designed to store transactional and customer inform
   <img src="bank-warehouse/bank_warehouse_diagram.png" alt="Bank Warehouse Diagram" width="500"/>
 </p>
 	
+- location: Stores the geographical location details of customers, including country, state, and city.
+- customers: Contains customer information such as first name, last name, and the customer's location.
+- accounts: Represents customer bank accounts, storing details like account number, creation date, and status.
+- transfers: Tracks transactions (deposits, withdrawals) related to accounts, along with the amount and status of each transaction.
+- calendar: Provides a date dimension to link transactions and account creation dates for time-based analysis (year, month, quarter).
+- insurance: Stores details of insurance policies held by customers, including policy number and coverage amount.
 
 This structure allows for efficient querying of customer data, account transactions, and insurance information, enabling complex reporting and analysis tasks such as customer behavior analysis, transaction trends, and policy coverage reporting.
-
 
 #### Table of Contents for Bank Data Warehouse
 
