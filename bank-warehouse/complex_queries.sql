@@ -10,8 +10,8 @@ ORDER BY account_id,balance_year,balance_month;
 CREATE TEMPORARY TABLE cumulativeBalance AS
 SELECT 
     account_id,
+	balance_year,
     balance_month,
-    balance_year,
     deposit_sum,
     withdrawal_sum,
     account_monthly_balance,
@@ -23,3 +23,4 @@ ORDER BY account_id, balance_year, balance_month;
 
 SELECT *
 FROM cumulativeBalance;
+

@@ -40,6 +40,12 @@ FROM transfers
 GROUP BY account_id
 ORDER BY account_id ASC
 ;
+-- Finding the second largest transfered amount, use of OFFSET
+SELECT amount
+FROM transfers
+ORDER BY amount DESC
+LIMIT 1
+OFFSET 1;
 
 -- Average coverage amount of the insurance, use of AVG and ROUND
 SELECT ROUND(AVG(coverage_amount),0) AS avg_coverage_amount
