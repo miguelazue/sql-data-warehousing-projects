@@ -7,14 +7,12 @@ This repository contains SQL scripts and data warehousing projects that demonstr
 
 - `requirements.txt`: Dependencies to recreate the Python environment
 - `README.md`: Repository documentation
-- `bank-warehouse/` Folder for the Bank Data Warehouse project.
+- `bank-warehouse/` Folder for the Bank Data Warehouse project named NewBank.
 
 
-## Project: Bank Data Warehouse
+## Project NewBank: Bank Data Warehouse
 
-The data for this project was built using synthetic data to mimic real-world banking scenarios, including customer accounts, transactions, insurance policies, and more.
-
-The data warehouse schema is designed to store transactional and customer information, providing a clear structure for analytical queries. Below is an overview of the key tables used in the warehouse:
+The data for this project was built using synthetic data to mimic real-world banking scenarios, including customer accounts, transactions, insurance policies, and more. The data warehouse schema is designed to store transactional and customer information, providing a clear structure for analytical queries.
 
 ### Data Warehouse Schema:
 
@@ -22,7 +20,7 @@ The data warehouse schema is designed to store transactional and customer inform
   <img src="bank-warehouse/bank_warehouse_diagram.png" alt="Bank Warehouse Diagram" width="700"/>
 </p>
 	
-Tables description:
+Tables overview:
 
 - `location`: Stores the geographical location details of customers, including country, state, and city.
 - `customers`: Contains customer information such as first name, last name, and the customer's location.
