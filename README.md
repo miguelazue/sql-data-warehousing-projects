@@ -19,3 +19,8 @@ This repository contains SQL scripts and data warehousing projects that demonstr
 
 ### Project: Bank Data Warehouse
 This repository showcases various SQL and data warehousing projects focused on creating structured data models, managing ETL processes, and analyzing data through complex SQL queries. The key project in this repository is a bank data warehouse, built using synthetic data to mimic real-world scenarios.
+
+
+<p align="center">
+  <img src="bank-warehouse/bank_warehouse_diagram.png" alt="Bank Warehouse Diagram" width="500"/>
+</p>
