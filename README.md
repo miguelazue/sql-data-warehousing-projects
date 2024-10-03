@@ -7,19 +7,24 @@ This repository contains SQL scripts and data warehousing projects that demonstr
 
 - `requirements.txt`: Dependencies to recreate the Python environment
 - `README.md`: Repository documentation
-- `bank-warhouse/` Folder for the Data Warehouse project recreating synthetic data of a Bank.
+- `bank-warehouse/` Folder for the Bank Data Warehouse project.
 
 
 ## Project: Bank Data Warehouse
 
-This project showcases various SQL and data warehousing uses focused on creating a structured data model, managing ETL processes, and analyzing data through complex SQL queries. The key project in this repository is a bank data warehouse, built using synthetic data to mimic real-world scenarios.
+The data for this project was built using synthetic data to mimic real-world banking scenarios, including customer accounts, transactions, insurance policies, and more.
 
-Diagram of the Warehouse:
+The data warehouse schema is designed to store transactional and customer information, providing a clear structure for analytical queries. Below is an overview of the key tables used in the warehouse:
+
+### Data Warehouse Schema:
 
 <p align="center">
   <img src="bank-warehouse/bank_warehouse_diagram.png" alt="Bank Warehouse Diagram" width="500"/>
 </p>
 	
+
+This structure allows for efficient querying of customer data, account transactions, and insurance information, enabling complex reporting and analysis tasks such as customer behavior analysis, transaction trends, and policy coverage reporting.
+
 
 #### Table of Contents for Bank Data Warehouse
 
