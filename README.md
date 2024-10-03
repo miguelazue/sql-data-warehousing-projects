@@ -19,7 +19,7 @@ The data warehouse schema is designed to store transactional and customer inform
 ### Data Warehouse Schema:
 
 <p align="center">
-  <img src="bank-warehouse/bank_warehouse_diagram.png" alt="Bank Warehouse Diagram" width="500"/>
+  <img src="bank-warehouse/bank_warehouse_diagram.png" alt="Bank Warehouse Diagram" width="700"/>
 </p>
 	
 Tables description:
