@@ -24,11 +24,11 @@ This repository showcases various SQL and data warehousing projects focused on c
 
 #### Table of Contents for Bank Data Warehouse
 
-- [Synthetic Data Generation Script](bank-warehouse/synthetic_data_generation.py)
-- [Data Warehouse Schema in txt](bank-warehouse/bank_diagram.txt)
-- [Create Tables in MySQL](bank-warehouse/create_tables.sql)
-- [Load Data in MySQL](bank-warehouse/load_data.sql)
-- [Sample Queries](bank-warehouse/sample_queries.sql)
+- [Synthetic Data Generation - Python](bank-warehouse/synthetic_data_generation.py)
+- [Data Warehouse Schema - DBML](bank-warehouse/bank_diagram.txt)
+- [Create Tables - SQL](bank-warehouse/create_tables.sql)
+- [Load Data - SQL](bank-warehouse/load_data.sql)
+- [Sample Queries - SQL](bank-warehouse/sample_queries.sql)
 
 
 
