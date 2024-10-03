@@ -29,7 +29,11 @@ Tables overview:
 - `calendar`: Provides a date dimension to link transactions and account creation dates for time-based analysis (year, month, quarter).
 - `insurance`: Stores details of insurance policies held by customers, including policy number and coverage amount.
 
-This structure allows for efficient querying of customer data, account transactions, and insurance information, enabling complex reporting and analysis tasks such as customer behavior analysis, transaction trends, and policy coverage reporting.
+
+Star Schema Design Choice
+The data warehouse follows a star schema design, prioritizing query efficiency and analytical performance over storage efficiency. This design choice was made because the primary goal of this warehouse is to support fast and flexible analytical queries, making it ideal for business intelligence and reporting use cases.
+
+In a star schema, dimension tables like customers, location, and calendar are directly linked to fact tables like accounts, transfers, and insurance. This minimizes the complexity of joins during queries and improves performance, especially for large datasets.
 
 #### Table of Contents for Bank Data Warehouse
 
