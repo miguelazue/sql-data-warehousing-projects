@@ -42,5 +42,23 @@ In a star schema, dimension tables like customers, location, and calendar are di
 - [Load Data - SQL](bank-warehouse/load_data.sql)
 - [Sample Queries - SQL](bank-warehouse/sample_queries.sql)
 
+### Examples
+
+In the SQL files you can see the different queries used for exploring the dataset. Here are presented some queries with the results
+
+
+<p align="center">
+  <img src="bank-warehouse/images/nested_queries.png" alt="Nested Queries" width="700"/>
+</p>
+
+<p align="center">
+  <img src="bank-warehouse/images/nester_queries_result.png" alt="Nested Queries Result" width="700"/>
+</p>
+
+
+
+
+
+
 
 

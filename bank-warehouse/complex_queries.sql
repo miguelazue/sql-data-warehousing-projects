@@ -38,6 +38,6 @@ SELECT
 	balance_year,
     balance_month,
     cumulative_balance, 
-    LAG(cumulative_balance, 1) OVER (ORDER BY account_id,balance_year,balance_month) AS previous_amount,
-    AVG(cumulative_balance) OVER (ORDER BY account_id,balance_year,balance_month ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_average_2
+    LAG(cumulative_balance, 1) OVER (PARTITION BY account_id ORDER BY balance_year, balance_month) AS previous_amount,
+    AVG(cumulative_balance) OVER (PARTITION BY account_id ORDER BY balance_year, balance_month ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_average_3
 FROM cumulativeBalance;
