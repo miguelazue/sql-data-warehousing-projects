@@ -47,19 +47,19 @@ In a star schema, dimension tables like customers, location, and calendar are di
 In the SQL files you can see the different queries used for exploring the dataset. Here are presented some queries with the results
 
 
-#### Example 1
+#### Example 1 - Nested Queries and Joins
 
 <p align="center">
   <img src="bank-warehouse/images/nested_queries.png" alt="Nested Queries" width="700"/>
 </p>
 
 <p align="center">
-  <img src="bank-warehouse/images/nester_queries_result.png" alt="Nested Queries Result" width="500"/>
+  <img src="bank-warehouse/images/nester_queries_result.png" alt="Nested Queries Result" width="300"/>
 </p>
 
 
 
-#### Example 2
+#### Example 2 - Window Function
 
 
 <p align="center">
@@ -67,12 +67,12 @@ In the SQL files you can see the different queries used for exploring the datase
 </p>
 
 <p align="center">
-  <img src="bank-warehouse/images/window_function1_result.png" alt="Window Function Result" width="500"/>
+  <img src="bank-warehouse/images/window_function1_result.png" alt="Window Function Result" width="700"/>
 </p>
 
 
 
-#### Example 2
+#### Example 3 - Other Window Functions
 
 
 <p align="center">
@@ -80,7 +80,7 @@ In the SQL files you can see the different queries used for exploring the datase
 </p>
 
 <p align="center">
-  <img src="bank-warehouse/images/window_function2_result.png" alt="Window Function 2 Result" width="500"/>
+  <img src="bank-warehouse/images/window_function2_result.png" alt="Window Function 2 Result" width="700"/>
 </p>
 
 
