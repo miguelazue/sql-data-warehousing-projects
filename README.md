@@ -44,7 +44,7 @@ In a star schema, dimension tables like customers, location, and calendar are di
 
 ### Examples
 
-In the SQL files you can see the different queries used for exploring the dataset. Here are presented some queries with the results
+The SQL files in this repository contain various queries for exploring and analyzing the dataset. Below are some example queries along with their results:
 
 
 #### Example 1 - Nested Queries and Joins
