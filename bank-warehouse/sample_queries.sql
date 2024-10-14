@@ -108,3 +108,9 @@ FROM customers
 LEFT JOIN location ON customers.location_id = location.location_id
 LEFT JOIN accounts_summary ON customers.customer_id = accounts_summary.customer_id
 LEFT JOIN insurance_summary ON customers.customer_id = insurance_summary.customer_id;
+
+
+-- DATA MODIFICATION
+INSERT INTO accounts (account_id, customer_id, created_date,status,account_number) VALUES (121, 1001, '2024-01-01','inactive','YSTZ3831890484248');
+UPDATE accounts SET status = 'active' WHERE account_id = 121;
+DELETE FROM accounts WHERE account_id = 121;

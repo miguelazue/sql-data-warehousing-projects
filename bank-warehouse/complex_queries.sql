@@ -1,3 +1,6 @@
+-- newbank is the schema created for the exercise
+USE newbank;
+
 CREATE TEMPORARY TABLE monthlyBalance AS
 SELECT account_id, YEAR(transaction_requested_date) AS balance_year,MONTH(transaction_requested_date) AS balance_month,
 SUM(CASE WHEN transaction_type = "deposit" THEN AMOUNT ELSE 0 END ) AS deposit_sum,
@@ -24,3 +27,17 @@ ORDER BY account_id, balance_year, balance_month;
 SELECT *
 FROM cumulativeBalance;
 
+-- OTHER WINDOW FUNCTIONS
+
+-- HIGHEST TRANSFERS
+SELECT account_id, amount, RANK() OVER (ORDER BY amount DESC) AS RANKING FROM transfers;
+
+-- LAG, MOVING AVERAGE
+SELECT 
+    account_id,
+	balance_year,
+    balance_month,
+    cumulative_balance, 
+    LAG(cumulative_balance, 1) OVER (ORDER BY account_id,balance_year,balance_month) AS previous_amount,
+    AVG(cumulative_balance) OVER (ORDER BY account_id,balance_year,balance_month ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_average_2
+FROM cumulativeBalance;
