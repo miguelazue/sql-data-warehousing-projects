@@ -47,15 +47,41 @@ In a star schema, dimension tables like customers, location, and calendar are di
 In the SQL files you can see the different queries used for exploring the dataset. Here are presented some queries with the results
 
 
+#### Example 1
+
 <p align="center">
   <img src="bank-warehouse/images/nested_queries.png" alt="Nested Queries" width="700"/>
 </p>
 
 <p align="center">
-  <img src="bank-warehouse/images/nester_queries_result.png" alt="Nested Queries Result" width="700"/>
+  <img src="bank-warehouse/images/nester_queries_result.png" alt="Nested Queries Result" width="500"/>
 </p>
 
 
+
+#### Example 2
+
+
+<p align="center">
+  <img src="bank-warehouse/images/window_function1.png" alt="Window Function" width="700"/>
+</p>
+
+<p align="center">
+  <img src="bank-warehouse/images/window_function1_result.png" alt="Window Function Result" width="500"/>
+</p>
+
+
+
+#### Example 2
+
+
+<p align="center">
+  <img src="bank-warehouse/images/window_function2.png" alt="Window Function 2" width="700"/>
+</p>
+
+<p align="center">
+  <img src="bank-warehouse/images/window_function2_result.png" alt="Window Function 2 Result" width="500"/>
+</p>
 
 
 
