@@ -41,6 +41,7 @@ In a star schema, dimension tables like customers, location, and calendar are di
 - [Create Tables - SQL](bank-warehouse/create_tables.sql)
 - [Load Data - SQL](bank-warehouse/load_data.sql)
 - [Sample Queries - SQL](bank-warehouse/sample_queries.sql)
+- [Complex Queries - SQL](bank-warehouse/complex_queries.sql)
 
 ### Examples
 
